@@ -1,0 +1,95 @@
+@import "/src/styles/variables/common";
+@import "/src/styles/mixins/breakpoints";
+@import "/src/styles/animations";
+
+.manualButton {
+  height: 28px;
+  border: 1px solid #e8eaeb;
+  border-radius: 7.5px;
+  padding: 0 10px !important;
+  color: $color-dark;
+
+  @include breakpoint("xl-min") {
+    height: 33px;
+    padding: 0 15px !important;
+    font-size: 13px;
+  }
+
+  .comingSoon & {
+    color: #ebebeb;
+  }
+}
+
+.manualButtonIcon {
+  width: 13px;
+  height: 13.5px;
+  margin: 0 7px 0 0;
+  object-fit: contain;
+  transform: rotateY(180deg) rotate(284deg);
+
+  path {
+    fill: #0085eb;
+  }
+
+  .comingSoon & {
+    path {
+      fill: #ebebeb;
+    }
+  }
+}
+
+.footer {
+  margin-top: 0;
+  border: none !important;
+}
+
+.detailsButton {
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.54;
+  letter-spacing: normal;
+  text-align: right;
+  color: #0098ff;
+
+  @include breakpoint("xl-min") {
+    font-size: 14px;
+  }
+
+  &:disabled {
+    background: none;
+    color: #ebebeb;
+  }
+}
+
+.detailsButtonIcon {
+  width: 7px;
+  height: auto;
+
+  .detailsButtonExpanded & {
+    transform: rotateX(180deg);
+  }
+
+  .comingSoon & {
+    path {
+      fill: #ebebeb;
+    }
+  }
+}
+
+.expanded {
+  margin-top: 20px;
+
+  @include breakpoint("xl-min") {
+    * {
+      font-size: 14px !important;
+    }
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

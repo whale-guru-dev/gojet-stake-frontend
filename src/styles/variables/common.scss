@@ -1,0 +1,60 @@
+$font-primary: Rubik, sans-serif;
+$font-secondary: 'Circular Std', sans-serif;
+
+$bg-dark: #050c1f;
+$bg-medium: #838792;
+$bg-light-darker: #2e3448;
+$bg-light: #ebebeb;
+$bg-white: #ffffff;
+$bg-grey: #c4c5c4;
+
+$color-border: #252c3e;
+
+$color-light: #ffffff;
+$color-light-darker: #2e3448;
+$color-thin-light: #60667a;
+$color-medium: #838792;
+$color-medium-light: #BFBFBF;
+$color-dark: #22282a;
+$color-darker: #2c2c36;
+$color-green: #37b786;
+$color-blue: #0098ff;
+$color-light-gray: #ebebeb;
+$color-red: #e94949;
+$color-darkest: white;
+$color-grey: #0f1528;
+$color-grey-border: #1d243b;
+$color-blue-border: #0084fc;
+$color-thin-darker: #22282a;
+$color-light-blue: #0098ff;
+$color-light-grey: #c4c5c4;
+
+    // transition
+$transition-all: all 0.15s ease-in;
+$transition-color: color 0.15s ease-in;
+$transition-opacity: opacity 0.15s ease-in;
+
+$transition-hover-color: color 0.15s ease-in;
+$transition-hover-opacity: opacity 0.15s ease-in;
+
+.avatar-uploader .ant-upload.ant-upload-select-picture-card {
+    background-color: transparent;
+    border: 0;
+}
+
+.ant-upload-picture-card-wrapper {
+    text-align: center;
+}
+
+.avatar-uploader .ant-upload-list {
+    text-align: center;
+}
+
+$breakpoints-min: (
+ "xl-min" : 1441px
+);
+$breakpoints-max: (
+    "md-max" : 1023px,
+    "sm-max" : 767px,
+);
+

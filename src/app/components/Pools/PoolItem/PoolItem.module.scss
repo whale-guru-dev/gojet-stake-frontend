@@ -1,0 +1,427 @@
+@import "/src/styles/variables/common";
+@import "/src/styles/mixins/breakpoints";
+@import "/src/styles/animations";
+
+.container {
+  position: relative;
+  background: $bg-white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  transition: all 1s cubic-bezier(.17, .67, .23, .99);
+  box-shadow: 5.5px 9.5px 45px 0 rgb(34 34 34 / 3%);
+}
+
+.comingSoon {
+  position: absolute;
+  transform: rotate(45deg);
+  width: 150px;
+  background: #0098ff;
+
+  font-family: $font-primary;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  right: -37px;
+  top: 22px;
+}
+
+.comingSoonButton {
+  background: #ebebeb !important;
+  color: #fff;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 29px 23px 25px 22px;
+  border-bottom: 1px solid #e8eaeb;
+}
+
+.body {
+  padding: 20px 23px 0;
+}
+
+.title {
+  display: block;
+  font-family: $font-primary;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-thin-darker;
+
+  @include breakpoint("xl-min") {
+    font-size: 23px;
+  }
+}
+
+.type {
+  font-family: $font-primary;
+  font-stretch: normal;
+  line-height: 1;
+  display: block;
+  font-size: 13px;
+  font-weight: normal;
+  color: $color-medium;
+
+  margin-top: 7px;
+
+  @include breakpoint("xl-min") {
+    font-size: 14px;
+  }
+}
+
+.label {
+  font-family: $font-primary;
+  font-size: 13px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-light-blue;
+  margin: 27px 0 0;
+
+  .containerLoading & {
+    background: $bg-light;
+    width: 80px;
+    height: 13px;
+    color: transparent;
+    border-radius: 5.5px;
+
+    animation: $opacity-pulse;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.symbol {
+  font-family: $font-primary;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-thin-darker;
+}
+
+.symbol_icon {
+  margin-left: 5px;
+}
+
+.button {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.submit {
+  width: 100%;
+}
+
+.amount_bar {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.amount {
+  color: $color-light-grey;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.sub_amount {
+  color: $color-light-grey;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.details {
+  color: $color-light-blue;
+  font-weight: bold;
+
+  svg {
+    fill: $color-light-blue;
+  }
+}
+
+.hide_details {
+  color: $color-light-blue;
+  font-weight: bold;
+
+  svg {
+    fill: $color-light-blue;
+    transform: rotate(180deg);
+  }
+}
+
+.status_bar {
+  margin-top: 23px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status {
+  padding: 8px 10px;
+  background-color: $bg-white;
+  border-radius: 7.5px;
+  border: 1px solid #e8eaeb;
+  display: flex;
+  flex-direction: row;
+}
+
+.stake_slider {
+  input[type=range] {
+    appearance: none;
+    width: 100%;
+    background: transparent;
+  }
+}
+
+.mainCoinImage {
+  border-radius: 50%;
+}
+
+.box {
+  margin-top: 8px;
+  padding: 9px 9px 18px 18px;
+  border-radius: 15px;
+  background-color: #f4f7f9;
+}
+
+.input {
+  border: none !important;
+  padding-left: 0 !important;
+
+  input {
+    font-family: $font-primary;
+    font-size: 15px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #24282b;
+  }
+}
+
+.index {
+  font-family: $font-primary;
+  font-size: 12px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #aeaeae;
+}
+
+.balance {
+  font-family: $font-primary;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #919191;
+
+  margin-top: 8px;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 62px);
+  grid-gap: 16px;
+
+  margin-top: 17px;
+}
+
+
+.option {
+  height: 30px;
+  border-radius: 15px;
+  background-color: #e3e8ea;
+
+  font-family: $font-primary;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: $color-blue;
+}
+
+.stakeButton {
+  width: 36px;
+  height: 36px;
+
+  &:not(:first-child) {
+    margin-left: 7px;
+  }
+}
+
+.collectButton {
+  min-width: 79px;
+}
+
+.buyButton {
+  margin-top: 24px;
+}
+
+.closeButton {
+  background: none;
+  color: $color-blue;
+  padding: 13px 11px;
+  font-size: 13.3px;
+  letter-spacing: 0.33px;
+  line-height: 10.5px;
+  transition: opacity 0.15s ease-in;
+  text-align: center;
+  font-weight: bold;
+}
+
+.earningComponent {
+  width: 60%;
+}
+.earningNumber {
+  width: 97%;
+  padding-top: 3px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #22282a;
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: auto;
+  text-overflow: clip; /* text-overflow: clip; */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  @include breakpoint("xl-min") {
+    font-size: 30px !important;
+    padding-top: 10px;
+  }
+}
+.earningNumber::-webkit-scrollbar {
+  display: none;
+}
+
+.earningValue {
+  width: 97%;
+  font-size: 14px !important;
+  color: #22282a;
+  white-space: nowrap;
+  overflow: auto;
+  text-overflow: clip; /* text-overflow: clip; */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  @include breakpoint("xl-min") {
+    font-size: 14px !important;
+  }
+}
+.earningValue::-webkit-scrollbar {
+  display: none;
+}
+
+.apy {
+  margin-bottom: 10px;
+}
+
+.earningText {
+  font-size: 10rem;
+  margin-bottom: 6rem;
+  color: #029ef7;
+  line-height: 16rem;
+}
+
+.rounded-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span{
+    color: black;
+  }
+}
+
+.harvestCompound {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2a2a78;
+}
+.harvestBalance {
+  font-size: 25px;
+  font-weight: bold;
+  color: #2a2a78;
+}
+
+.harvestEarning {
+  font-size: 15px;
+  font-weight: bold;
+  color: #2a2a78;
+}
+
+.modalStake svg path{
+  fill: #029ef7;
+}
+
+.closeWindow {
+  color: #029ef7;
+  margin-top: 24px;
+}
+.dismissButton {
+  color:  #029ef7;
+  margin-top: 20px;
+}
+
+.modalHeading {
+  font-family: $font-primary;
+  margin: 0;
+  font-size: 21px;
+}

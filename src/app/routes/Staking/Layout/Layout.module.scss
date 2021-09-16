@@ -1,0 +1,17 @@
+@import "/src/styles/variables/common";
+@import "/src/styles/mixins/breakpoints";
+
+$aside-width: max(15vw, 200px);
+
+.container {
+  background: #fafbfb;
+}
+
+.main {
+  // padding-top: 59rem;
+  // min-height: calc(100vh - 59rem);
+  background-color: black;
+}
+
+.content {
+}

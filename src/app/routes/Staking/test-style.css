@@ -1,0 +1,18 @@
+@media (max-width: 767px) {
+    html {
+        font-size: 1px;
+    }
+}
+
+@media (max-width: 1023px) {
+    html {
+        font-size: .09765625vw;
+    }
+}
+
+html {
+    overflow: hidden;
+    overflow-y: auto;
+    font-family: Rubik, sans-serif;
+    font-size: 1px;
+}

@@ -1,14 +1,45 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'antd/dist/antd.css';
 import './index.css';
-import App from './App';
+// import './styles/index.scss';
 import reportWebVitals from './reportWebVitals';
+import createStore from './configureStore';
+import withAppContext from './app/contexts/withAppContext'
+import { Provider } from "react-redux";
+import { BrowserRouter as Router } from 'react-router-dom';
+import { ThemeContextProvider } from "./app/contexts/ThemeProvider";
+import { RefreshContextProvider } from "./app/contexts/RefreshContext";
+import { ModalProvider } from "@pancakeswap-libs/uikit";
+import { ToastsProvider } from './app/contexts/ToastsContext/Provider';
+import { Web3ReactProvider } from '@web3-react/core'
+import { getLibrary } from './app/util'
+import MainApp from './MainApp';
+
+const { store } = createStore();
+
+// TODO: refactor
+const AppWithContext = withAppContext(
+  MainApp
+);
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <Web3ReactProvider getLibrary={getLibrary}>
+    <Provider store={store}>
+      <ToastsProvider>
+        <ThemeContextProvider>
+          <RefreshContextProvider>
+            <ModalProvider>
+              <Router>
+                <AppWithContext />
+              </Router>
+            </ModalProvider>
+          </RefreshContextProvider>
+        </ThemeContextProvider>
+      </ToastsProvider>
+    </Provider>
+  </Web3ReactProvider>,
+  document.getElementById('root'),
 );
 
 // If you want to start measuring performance in your app, pass a function

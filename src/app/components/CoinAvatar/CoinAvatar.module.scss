@@ -1,0 +1,40 @@
+@import "/src/styles/mixins/breakpoints";
+@import "/src/styles/variables/common";
+
+.container {
+  position: relative;
+  display: block;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: $bg-light no-repeat center / cover;
+
+  @include breakpoint("xl-min") {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $bg-medium no-repeat center / cover;
+  border-radius: 50%;
+  border: none;
+
+  @include breakpoint("xl-min") {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.iconImage {
+  max-height: 18px;
+  max-width: 18px;
+}

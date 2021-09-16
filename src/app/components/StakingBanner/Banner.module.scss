@@ -1,0 +1,87 @@
+@import "/src/styles/variables/common";
+@import "/src/styles/mixins/breakpoints";
+
+.container {
+  min-height: 170px;
+  padding: 30px 100px;
+  background: linear-gradient(to bottom, #000000, #000000);
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  @include breakpoint("md-max") {
+    padding: 30px 50px;
+  }
+
+
+  @include breakpoint("sm-max") {
+    padding: 20px;
+    background: linear-gradient(to bottom, #000000, #000000) !important;
+    min-height: 120px;
+    justify-content: center;
+  }
+
+  @include breakpoint("xl-min") {
+    min-height: 200px;
+  }
+}
+
+.image {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 7vw;
+  max-width: 150px;
+  z-index: 0;
+
+  @include breakpoint("md-max") {
+    right: 0;
+  }
+
+  @include breakpoint("sm-max") {
+    display: none;
+  }
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  font-family: $font-secondary;
+  font-size: 20rem;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: -0.63px;
+  text-align: left;
+
+  margin: 0;
+  color: white;
+  @include breakpoint("sm-max") {
+    text-align: center;
+  }
+}
+
+.text {
+  font-family: $font-primary;
+  font-size: 10rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+
+  margin: 5px 0 0;
+  color: white;
+
+  @include breakpoint("sm-max") {
+    text-align: center;
+  }
+}

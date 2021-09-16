@@ -1,0 +1,82 @@
+@import "/src/styles/variables/common";
+@import "/src/styles/mixins/breakpoints";
+
+.wallet {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 7.5px;
+  background-color: #EBEBEB;
+
+  height: 33px;
+  padding: 0 2px 0 12px;
+
+  cursor: pointer;
+
+  @include breakpoint("sm-max") {
+    border-radius: 5px;
+    padding: 0 0 0 7px;
+    height: 20px;
+  }
+
+  @include breakpoint("xl-min") {
+    border-radius: 9px;
+    height: 40px;
+    padding: 0 3px 0 15px;
+  }
+}
+
+.walletBalance, .walletAddress {
+  font-family: $font-primary;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: right;
+  color: #22282a;
+
+  @include breakpoint("sm-max") {
+    font-size: 7.5px;
+  }
+
+  @include breakpoint("xl-min") {
+    font-size: 16px;
+  }
+}
+
+.walletAddress {
+  display: flex;
+  align-items: center;
+  height: 15px;
+  background: #0078ff;
+  border-radius: 6.5px;
+  padding: 0 10px;
+  color: #fff;
+
+  margin-left: 10px;
+
+  @include breakpoint("sm-max") {
+    padding: 0 5px 0 5px;
+    margin-left: 5px;
+    height: 20px;
+    border-radius: 5px;
+  }
+
+  @include breakpoint("xl-min") {
+    border-radius: 6px;
+    height: 34px;
+  }
+}
+
+.walletIcon {
+  margin-left: 10px;
+  border-radius: 50%;
+
+  @include breakpoint("sm-max") {
+    margin-left: 4px;
+    margin-bottom: 2px;
+  }
+}

@@ -1,0 +1,25 @@
+.content {
+    max-width: 1280rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-left: 78rem;
+    padding-right: 78rem;
+  
+    // @include breakpoint("sm-max") {
+    //   padding-left: 20rem;
+    //   padding-right: 20rem;
+    // }
+  
+    &_level {
+      &_1 {
+        padding-left: 149rem;
+        padding-right: 149rem;
+  
+        // @include breakpoint("sm-max") {
+        //   padding-left: 20rem;
+        //   padding-right: 20rem;
+        // }
+      }
+    }
+  }
+  

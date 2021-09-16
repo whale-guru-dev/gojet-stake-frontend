@@ -1,0 +1,105 @@
+@import "/src/styles/variables/common";
+@import "/src/styles/mixins/breakpoints";
+@import "/src/styles/animations";
+
+.switcher {
+  margin-top: 28px;
+}
+
+.container {
+  padding-bottom: 73rem;
+
+  @include breakpoint("sm-max") {
+    padding-bottom: 32rem;
+  }
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include breakpoint("sm-max") {
+    flex-direction: column;
+  }
+}
+
+.heading {
+  font-family: $font-primary;
+  font-size: 24rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-dark;
+
+  margin: 0;
+
+  @include breakpoint("sm-max") {
+    font-size: 30rem;
+    text-align: center;
+
+    white-space: pre-line;
+  }
+}
+
+.text {
+  font-family: $font-primary;
+  font-size: 12rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-medium;
+
+  margin: 15rem 0 0;
+
+  @include breakpoint("sm-max") {
+    font-size: 13.3rem;
+  }
+}
+
+.body {
+  margin-top: 21rem !important;
+}
+
+
+.actions {
+  @include breakpoint("sm-max") {
+    margin-top: 17rem;
+  }
+}
+
+.action {
+  border-width: 1rem;
+  font-size: 12rem;
+  height: 35rem;
+  padding: 0 16rem 0 5rem !important;
+
+  @include breakpoint("sm-max") {
+    height: 30rem;
+    padding: 0 14rem 0 4rem !important;
+    font-size: 10.3rem;
+  }
+
+  &:not(:first-child) {
+    margin-left: 23rem;
+
+    @include breakpoint("sm-max") {
+      margin-left: 20rem;
+    }
+  }
+}
+
+.actionIcon {
+  width: 25rem;
+  height: auto;
+
+  @include breakpoint("sm-max") {
+    width: 22rem;
+  }
+}

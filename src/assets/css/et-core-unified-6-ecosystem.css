@@ -1,0 +1,16 @@
+.ecosystem {
+  background-image: url('../img/ecosystem.jpg');
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+}
+
+.social-icon {
+  width: 25px;
+  line-height: 32px;
+  transition: 0.3s;
+  color: white;
+  font-size: 26px !important;
+}

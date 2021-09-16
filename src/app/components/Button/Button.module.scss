@@ -1,0 +1,248 @@
+@import "/src/styles/variables/common";
+@import "/src/styles/mixins/breakpoints";
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing:border-box;
+  appearance: none;
+  background: none;
+  line-height: 100%;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: $color-dark;
+  cursor: pointer;
+  transition: $transition-hover-opacity;
+
+  font-family: $font-primary;
+
+  &:hover {
+    opacity: 0.75;
+  }
+
+  &:focus {
+    text-shadow: 0rem 0rem 2rem rgba($color-dark, 0.25);
+  }
+}
+
+
+
+.loading {
+  margin-left: 6px;
+  width: 17px;
+
+  animation: rotate 1s linear infinite;
+}
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// sizes
+
+.buttonPrimary {
+  padding: 18rem 33rem;
+  border-radius: 6rem;
+  font-size: 15rem;
+  line-height: 11.5rem;
+
+  @include breakpoint("sm-max") {
+    font-family: $font-primary;
+    padding: 17.7rem 26rem;
+    font-size: 13rem;
+    line-height: 13rem;
+  }
+}
+
+.buttonCompact {
+  padding: 0 11.5rem;
+  height: 38rem;
+  font-size: 15rem;
+  font-weight: bold;
+  letter-spacing: 0.75rem;
+  line-height: 1;
+
+  border-radius: 10rem;
+
+  @include breakpoint("sm-max") {
+    padding: 0 10rem;
+    height: 30rem;
+    font-size: 12rem;
+    letter-spacing: 0.6rem;
+    border-radius: 6.7rem;
+  }
+}
+
+.buttonSmall {
+  height: 22rem;
+  padding: 0 9rem;
+  font-size: 12rem;
+  font-weight: 500;
+  border-radius: 6rem;
+  line-height: 1;
+}
+
+// styles
+
+
+.buttonLight {
+  background: $color-light;
+  color: $color-dark;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+.buttonDark {
+
+}
+
+.buttonGray {
+  background: #e8edef;
+  color: #6f6f79;
+}
+
+.buttonGradient {
+  background-image: linear-gradient(45deg, #fcb037, #e638c7, #31bcfd);
+  color: #ffffff;
+
+  transition: $transition-hover-opacity;
+
+  &:hover {
+    opacity: 0.9;
+    color: #ffffff;
+  }
+}
+
+// MISC
+
+.buttonRound {
+  &.buttonCompact {
+    border-radius: 18.7rem;
+    padding: 0 20rem;
+  }
+}
+
+.buttonDisabled {
+  background: #aeaeae;
+  color: $color-light;
+  cursor: not-allowed;
+}
+
+.buttonOutline {
+  border-style: solid;
+  border-width: 2rem;
+  border-color: currentColor;
+  background: none;
+
+  &:focus {
+    box-shadow: 0rem 0rem 2rem rgba($color-dark, 0.25);
+    text-shadow: none;
+  }
+
+  &.buttonCompact {
+    padding: 0 10rem;
+  }
+
+  &.buttonGray  {
+    border-color: #e4e6ef;
+    color: $color-medium;
+  }
+
+  &.buttonLight {
+    color: $color-light;
+    border-color: $color-light;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+
+  &.buttonGradient {
+    box-sizing: border-box;
+    position: relative;
+    border: solid 2rem transparent;
+    background:
+            linear-gradient(#fff,#fff) padding-box,
+            linear-gradient(45deg, #fcb037, #e638c7, #31bcfd) border-box;
+
+    &:hover {
+      opacity: 1;
+
+      &:before, &:after {
+        opacity: 0.85;
+      }
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 0; right: 0; bottom: 0; left: 0;
+      z-index: -2;
+      margin: -2rem;
+      border-radius: 10rem;
+      background: linear-gradient(45deg, #fcb037, #e638c7, #31bcfd);
+
+      @include breakpoint("sm-max") {
+        border-radius: 6.7rem;
+      }
+    }
+
+    &:after {
+      content: attr(text);
+      display: block;
+      margin: auto;
+      width: 100%;
+      height: 16rem;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      color: $color-dark;
+      top: 0; right: 0; bottom: 0; left: 0;
+      z-index: 1;
+      background-image: linear-gradient(45deg, #fcb037, #e638c7, #31bcfd);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+
+      @include breakpoint("sm-max") {
+        height: 13rem;
+      }
+    }
+  }
+}
+
+
+.icon {
+  display: inline-block;
+  line-height: 0;
+  width: 12rem;
+  height: 12rem;
+  margin-left: 7rem;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  svg, path {
+    fill: currentColor;
+    border: currentColor;
+  }
+}
+
+.iconAlignStart {
+  margin-left: 0;
+  margin-right: 7rem;
+}

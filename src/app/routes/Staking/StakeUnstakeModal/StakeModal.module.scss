@@ -1,0 +1,150 @@
+@import "/src/styles/mixins/breakpoints";
+@import "/src/styles/variables/common";
+@import "/src/styles/animations";
+
+.container {
+  & :global {
+    .ant-modal-close-x {
+      margin: 17px 14px 0 0;
+    }
+  }
+}
+
+.wrapper {
+  padding: 29px 29px 34px;
+}
+
+.heading {
+  font-family: $font-primary;
+  font-size: 20px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #24282b;
+
+  margin: 0;
+}
+
+
+.label {
+  font-family: $font-primary;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #24282b;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 22px;
+}
+
+.avatar {
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: no-repeat center / cover;
+  margin-right: 5px;
+}
+
+
+.avatarGroup {
+  display: flex;
+  align-items: center;
+}
+
+.box {
+  margin-top: 8px;
+  padding: 9px 9px 18px 18px;
+  border-radius: 15px;
+  background-color: #f4f7f9;
+}
+
+.input {
+  border: none !important;
+  padding-left: 0 !important;
+
+  input {
+    font-family: $font-primary;
+    font-size: 15px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #24282b;
+  }
+}
+
+.index {
+  font-family: $font-primary;
+  font-size: 12px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #aeaeae;
+}
+
+.balance {
+  font-family: $font-primary;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #919191;
+
+  margin-top: 8px;
+}
+
+.range {
+  display: block;
+  margin-top: 15px;
+  padding: 0 7px;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 62px);
+  grid-gap: 16px;
+
+  margin-top: 17px;
+}
+
+
+.option {
+  height: 30px;
+  border-radius: 15px;
+  background-color: #e3e8ea;
+
+  font-family: $font-primary;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #0098ff;
+}
+
+.button {
+  width: 100%;
+  margin-top: 20px;
+  background: #0098ff;
+  color: #fff;
+}

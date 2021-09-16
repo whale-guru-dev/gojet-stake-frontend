@@ -1,0 +1,233 @@
+@import "/src/styles/variables/common";
+@import "/src/styles/mixins/breakpoints";
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  // width: 100vw;
+  padding: 12rem 0 12rem;
+  box-sizing: border-box;
+  z-index: 999;
+  background: #fff;
+
+  transition: background-color 0.15s ease-in;
+
+  @include breakpoint("sm-max") {
+    padding: 15.3rem 0 15rem;
+  }
+}
+
+.containerScrolled {
+  background: $bg-light;
+
+  &.poolsPage {
+    background: transparent;
+  }
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+}
+
+.logoLink {
+  margin: 0;
+  padding: 0;
+  width: 136.5rem;
+  height: 33.5rem;
+
+  @include breakpoint("md-max") {
+    width: 119rem;
+    height: 29rem;
+  }
+
+  .poolsPage & {
+    visibility: hidden;
+  }
+}
+
+.nav {
+  margin: 0 20rem;
+}
+
+.menuWrapper {
+  @include breakpoint("sm-max") {
+    display: none;
+    //position: absolute;
+    //visibility: hidden;
+    //background-color: white;
+    //max-height: 0;
+    //width: 100%;
+    //box-sizing: border-box;
+    //top: calc(100% + 1rem);
+    //left: 0;
+    //padding: 0 20rem;
+    //
+    //transition: all 0.15s ease-in;
+    //
+    //.containerOpen & {
+    //  visibility: visible;
+    //  opacity: 1;
+    //  max-height: 500rem;
+    //}
+  }
+}
+
+.menu {
+  list-style: none;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+
+  @include breakpoint("sm-max") {
+    display: block;
+  }
+}
+
+.menuItem {
+  margin: 0;
+  padding: 0;
+
+  &:not(:first-child) {
+    margin-left: min(3.12vw, 40rem);
+  }
+
+  @include breakpoint("sm-max") {
+    &:not(:first-child) {
+      margin-left: 0;
+    }
+
+    &:not(:last-child) {
+      .menuLink {
+        border-bottom: 1rem solid rgb(246,246,248);
+      }
+    }
+  }
+}
+
+.menuLink {
+  font-family: $font-primary;
+  font-size: 15rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.77;
+  letter-spacing: normal;
+  text-align: center;
+  color: $color-dark;
+
+  margin: 0;
+  padding: 0;
+  height: auto;
+  background: none;
+  border: none;
+  transition: all 0.25s ease-in;
+  cursor: pointer;
+
+  @include breakpoint("md-max") {
+    font-size: 13rem;
+    line-height: 1;
+  }
+
+  // @include breakpoint("md-min") {
+  //   .menuItemActive & {
+  //     font-weight: bold;
+  //   }
+  // }
+
+  @include breakpoint("sm-max") {
+    display: inline-block;
+    padding: 21.3pt 0;
+    width: 100%;
+    box-sizing: border-box;
+
+    font-weight: bold;
+    font-size: 15rem;
+    line-height: 12.3rem;
+  }
+
+  &:link {
+    text-decoration: none;
+
+    // @include breakpoint("md-min") {
+    //   .menuItemActive & {
+    //   }
+    // }
+  }
+
+  &:visited {
+
+    // @include breakpoint("md-min") {
+    //   .menuItemActive & {
+    //   }
+    // }
+  }
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &:active {
+    color: $color-medium;
+
+    @include breakpoint("sm-max") {
+    }
+  }
+}
+
+.menuLinkActive{
+}
+
+.wallet {
+  height: 15rem; 
+}
+
+.button {
+  @include breakpoint("md-max") {
+    font-size: 12rem;
+    padding: 0 10rem;
+    height: 15rem;
+    border-radius: 6.7rem;
+    margin-left: 30px;
+  }
+  height: 15rem; 
+}
+
+.buttonIconWrapper {
+  display: block;
+  position: relative;
+  margin-right: 6rem;
+  width: 17.5rem;
+
+  @include breakpoint("md-max") {
+    width: 13.3rem;
+    margin-right: 4.3rem;
+  }
+
+  img {
+    position: absolute;
+    bottom: -2rem;
+    right: 0;
+    width: 17.5rem;
+    height: auto;
+
+    @include breakpoint("md-max") {
+      bottom: 0;
+      width: 13.3rem;
+    }
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}

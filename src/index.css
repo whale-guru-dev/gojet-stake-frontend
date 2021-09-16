@@ -1,13 +1,289 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: 'SFProText-Light', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: 'Poppins', source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes riseUp {
+    from {
+        top: 30px;
+    }
+
+    to {
+        top: 0px;
+    }
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes riseLeft {
+    from {
+        left: 100px;
+    }
+
+    to {
+        left: 0px;
+    }
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes riseRight {
+    from {
+        right: 100px;
+    }
+
+    to {
+        right: 0px;
+    }
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleX {
+    0% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+
+@keyframes rotatation {
+    from {
+        transform: rotate(90deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes returnLeftPosition {
+    from {
+        left: 33%
+    }
+
+    to {
+        left: 0
+    }
+}
+
+@keyframes returnRightPosition {
+    from {
+        right: 33%
+    }
+
+    to {
+        right: 0
+    }
+}
+
+@keyframes returnLeftPositionMobile {
+    from {
+        left: 100%
+    }
+
+    to {
+        left: 0
+    }
+}
+
+@keyframes returnRightPositionMobile {
+    from {
+        right: 100%
+    }
+
+    to {
+        right: 0%
+    }
+}
+
+@keyframes scaleHomeBannerWeb {
+    from {
+        transform: scale(1.5)
+    }
+
+    to {
+        transform: scale(0.5)
+    }
+}
+
+@keyframes scaleHomeBannerMobile {
+    from {
+        transform: rotate(270deg) scale(4.4)
+    }
+
+    to {
+        transform: rotate(270deg) scale(0.7)
+    }
+}
+
+@keyframes scaleHomeBannerIpad {
+    from {
+        transform: scale(1.5);
+        top: -10%
+    }
+
+    to {
+        transform: scale(0.5);
+        top: 0
+    }
+}
+
+@keyframes scaleHomeTextWeb {
+    from {
+        opacity: 100%;
+    }
+
+    to {
+        opacity: 0%;
+    }
+}
+
+@keyframes scaleHomeTextMobile {
+    from {
+        font-size: 10px;
+        top: 47%;
+        opacity: 100%;
+    }
+
+    to {
+        font-size: 10px;
+        top: 47%;
+        opacity: 0%;
+    }
+}
+
+@keyframes scaleHomeTextIpad {
+    from {
+        font-size: 50px;
+        left: 25%;
+        top: 40%;
+        opacity: 100%;
+    }
+
+    to {
+        font-size: 30px;
+        left: 35%;
+        top: 40%;
+        opacity: 0%;
+    }
+}
+
+@keyframes scaleHomeTextIpadPro {
+    from {
+        font-size: 60px;
+        left: 27%;
+        top: 42%;
+        opacity: 100%;
+    }
+
+    to {
+        font-size: 40px;
+        left: 35%;
+        top: 42%;
+        opacity: 0%;
+    }
+}
+
+@keyframes disappear {
+    from {
+        opacity: 100%;
+    }
+
+    to {
+        opacity: 0%;
+    }
+}
+
+@keyframes disappearNavCustom {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+blockquote {
+    border-radius: 3px;
+    position: relative;
+    /*  <--- */
+    text-align: center;
+    padding: 1rem 1.2rem;
+    width: 80%;
+    /* create space for the quotes */
+    margin: 1rem auto 2rem;
+    font-size: 25px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    color: #535564;
+    max-width: 1200px;
+    margin-block-start: 5px;
+}
+
+blockquote:before,
+blockquote:after {
+    font-family: FontAwesome;
+    position: absolute;
+    /* -- inside the relative position of blockquote -- */
+    top: 13px;
+    color: #E8E8E8;
+    font-size: 20px;
+}
+
+blockquote:before {
+    content: "\f10d";
+    margin-top: 10px;
+    right: 97%;
+    color: #cbcbcb;
+}
+
+blockquote:after {
+    content: "\f10e";
+    margin-bottom: 5px;
+    top: auto;
+    bottom: 13px;
+    padding-left: 10px;
 }

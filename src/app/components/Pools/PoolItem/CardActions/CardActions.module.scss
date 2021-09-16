@@ -1,0 +1,44 @@
+@import "/src/styles/mixins/breakpoints";
+
+.label {
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.54;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0098ff;
+
+  @include breakpoint("xl-min") {
+    font-size: 14px;
+  }
+}
+
+.frozenCollect {
+  height: auto;
+  background: none;
+  width: 93px;
+}
+
+.frozenImage {
+  width: 100%;
+}
+
+.frozenStakeButton {
+  width: 43px;
+  height: auto;
+  background: none;
+
+  &:not(:first-child) {
+    margin-left: 4px;
+  }
+}
+
+.frozenEnableButton {
+  width: 100%;
+  height: auto;
+  background: none;
+
+  margin-top: 3px;
+}

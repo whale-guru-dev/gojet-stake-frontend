@@ -1,0 +1,49 @@
+@use "sass:math";
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  overflow: hidden;
+  overflow-y: auto;
+  font-family: $font-primary;
+
+  // Keep this for proper scaling using relative units (rem);
+  // ---------------------------------------------------------------------
+  font-size: 1px;
+
+  // @include breakpoint("lg-min") {
+  //   font-size: (1/1280) * 100vw;
+  // }
+
+  // @include breakpoint("md-max") {
+  //   font-size: (1/1024) * 100vw;
+  // }
+
+  // @include breakpoint("sm-max") {
+  //   font-size: 1px;
+  // }
+
+  // Enable this to support layout proportional scaling on mobile
+  //@include breakpoint("sm-max") {
+  //  font-size: (1/375) * 100vw;
+  //}
+  // ----------------------------------------------------------------------
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+input[type=text], textarea, button {
+  outline: none;
+}
+
+input[type=text]:focus, textarea:focus, button:focus, a:focus {
+  outline: none;
+}

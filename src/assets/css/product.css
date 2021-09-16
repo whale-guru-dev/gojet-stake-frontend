@@ -1,0 +1,12 @@
+.et_pb_tabs_controls li {
+  border: none;
+  margin-right: 16px;
+}
+
+ul.et_pb_tabs_controls {
+  margin-bottom: 0;
+}
+
+ul.et_pb_tabs_controls:after {
+  border-top: none;
+}

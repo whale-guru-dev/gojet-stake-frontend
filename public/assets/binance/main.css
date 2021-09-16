@@ -1,0 +1,39 @@
+#__next{
+    display: none;
+    height: 0px;
+}
+
+
+/* .btn-leaf {
+    color: #05ffc5;
+    background-color: transparent;
+    border-color: #05ffc5; /*set the color you want here
+}  */
+.input-effect:focus >
+
+.Amount-effect
+{
+    border: 1px solid;
+    border-color: rgb(240, 185, 11); /*set the color you want here*/
+}
+
+.Amount-effect:hover, .Amount-effect:focus, .Amount-effect:active, .Amount-effect.active, .open>.dropdown-toggle.Amount-effect {
+    border: 1px solid;
+    border-color: rgb(240, 185, 11); 
+}
+
+.video-effect:hover
+{
+    
+    background: rgb(240, 185, 11); 
+}
+.video-effect:hover, .video-effect:focus, .video-effect:active, .video-effect.active, .open>.dropdown-toggle.video-effect {
+    color: black;
+    background-color: rgb(240, 185, 11);
+    border-color: #285e8e; /*set the color you want here*/
+}
+
+.gtgeDv
+{
+    background: transparent;
+}
