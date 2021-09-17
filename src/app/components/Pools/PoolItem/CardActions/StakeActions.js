@@ -1,7 +1,7 @@
 import React from 'react'
 import { Flex, Heading, Text, useModal, } from '@pancakeswap-libs/uikit'
 import BigNumber from 'bignumber.js'
-import { formatNumber, getBalanceNumber, getDecimalAmount } from '../../../../util'
+import { formatNumber, getBalanceNumber, getDecimalAmount } from '../../../../util/lib/formatBalance'
 import NotEnoughTokensModal from '../Modals/NotEnoughTokensModal'
 import StakeModal from '../Modals/StakeModal'
 import Button from "../../../Button";

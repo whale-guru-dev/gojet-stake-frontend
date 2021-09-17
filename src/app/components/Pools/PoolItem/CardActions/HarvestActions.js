@@ -1,6 +1,6 @@
 import React from 'react'
 import { Flex, Heading, Text, useModal } from '@pancakeswap-libs/uikit'
-import { formatNumber, getBalanceNumber, getFullDisplayBalance } from '../../../../util'
+import { formatNumber, getBalanceNumber, getFullDisplayBalance } from '../../../../util/lib/formatBalance'
 import CollectModal from '../Modals/CollectModal'
 import { useGetApiPrice } from "../../../../state/hooks";
 import Button from "../../../Button";

@@ -16,7 +16,7 @@ import RangeInput from "../../../Form/components/Input/RangeInput";
 import NumberInput from "../../../Form/components/Input/NumberInput";
 import style from '../PoolItem.module.scss';
 import { get } from 'lodash'
-import naftCoinImage from '../../../../../assets/images/vdc-compound.png';
+import getCoinImage from '../../../../../assets/images/vdc-compound.png';
 
 const StakeModal = ({
                       pool,
@@ -43,7 +43,7 @@ const StakeModal = ({
 
   useEffect(() => {
     if (!pool.smallerCoinImage || pool.smallerCoinImage === '') {
-      setCoinImage(naftCoinImage);
+      setCoinImage(getCoinImage);
     } else {
       setCoinImage(pool.smallerCoinImage);
     }
@@ -115,7 +115,7 @@ const StakeModal = ({
       <Flex alignItems="center" justifyContent="space-between" mb="8px">
         <Text bold>{isRemovingStake ? 'Unstake' : 'Stake'}:</Text>
         <Flex alignItems="right" minWidth="80px">
-          <img src={coinImage} width={24} height={24}
+          <img src={getCoinImage} width={24} height={24}
                alt={coinSymbol} className={style.mainCoinImage} />
           <Text ml="4px" bold>
             {coinSymbol}

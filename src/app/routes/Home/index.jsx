@@ -107,7 +107,7 @@ export default function Home() {
                     }}
                   />
                 </div>
-                <section className="et_pb_module et_pb_fullwidth_header et_pb_fullwidth_header_0 et_animated et_hover_enabled et_pb_text_align_center et_pb_bg_layout_dark">
+                <section className="et_pb_module et_pb_fullwidth_header et_pb_fullwidth_header_0 et_had_animation et_hover_enabled et_pb_text_align_center et_pb_bg_layout_dark">
                   <div className="et_pb_fullwidth_header_container center">
                     <div className="header-content-container center">
                       <div className="header-content">
@@ -173,14 +173,14 @@ export default function Home() {
               {/* .et_pb_section */}
               <div className="et_pb_section et_pb_section_2 et_pb_with_background et_section_regular">
                 <FlexRow className="et_pb_row et_pb_row_2 jet-token-section">
-                  <div className="et_pb_with_border et_pb_module et_pb_blurb et_pb_blurb_0 et_animated  et_pb_text_align_justified  et_pb_blurb_position_top et_pb_bg_layout_dark token_info_entry">
+                  <div className="et_pb_with_border et_pb_module et_pb_blurb et_pb_blurb_0 et_had_animation  et_pb_text_align_justified  et_pb_blurb_position_top et_pb_bg_layout_dark token_info_entry">
                     <div className="et_pb_blurb_content">
                       <div className="et_pb_main_blurb_image">
                         <StyledImg
                           loading="lazy"
                           src="./assets/image/gojet-logo.png"
                           alt="JET Logo"
-                          className="et-waypoint et_pb_animation_top wp-image-27"
+                          className="et-waypoint et_pb_animation_top wp-image-27 et-animated"
                         />
                       </div>
                       <div className="et_pb_blurb_container">
@@ -276,7 +276,7 @@ export default function Home() {
                   </div>{" "}
                   {/* .et_pb_column */}
                   <div className="et_pb_column et_pb_column_1_3 et_pb_column_8  et_pb_css_mix_blend_mode_passthrough et-last-child">
-                    <div className="et_pb_with_border et_pb_module et_pb_blurb et_pb_blurb_3 et_animated  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_dark">
+                    <div className="et_pb_with_border et_pb_module et_pb_blurb et_pb_blurb_3  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_dark et_had_animation">
                       <div className="et_pb_blurb_content">
                         <div className="et_pb_main_blurb_image">
                           <span className="et_pb_image_wrap">
@@ -308,7 +308,7 @@ export default function Home() {
                 {/* .et_pb_row */}
                 <div className="et_pb_row et_pb_row_5">
                   <div className="et_pb_column et_pb_column_1_3 et_pb_column_9  et_pb_css_mix_blend_mode_passthrough">
-                    <div className="et_pb_with_border et_pb_module et_pb_blurb et_pb_blurb_4 et_animated  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_dark">
+                    <div className="et_pb_with_border et_pb_module et_pb_blurb et_pb_blurb_4  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_dark et_had_animation">
                       <div className="et_pb_blurb_content">
                         <div className="et_pb_main_blurb_image">
                           <span className="et_pb_image_wrap">
@@ -337,7 +337,7 @@ export default function Home() {
                   </div>{" "}
                   {/* .et_pb_column */}
                   <div className="et_pb_column et_pb_column_1_3 et_pb_column_10  et_pb_css_mix_blend_mode_passthrough">
-                    <div className="et_pb_with_border et_pb_module et_pb_blurb et_pb_blurb_5 et_animated  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_dark">
+                    <div className="et_pb_with_border et_pb_module et_pb_blurb et_pb_blurb_5  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_dark et_had_animation">
                       <div className="et_pb_blurb_content">
                         <div className="et_pb_main_blurb_image">
                           <span className="et_pb_image_wrap">
@@ -370,7 +370,7 @@ export default function Home() {
                   </div>{" "}
                   {/* .et_pb_column */}
                   <div className="et_pb_column et_pb_column_1_3 et_pb_column_11  et_pb_css_mix_blend_mode_passthrough et-last-child">
-                    <div className="et_pb_with_border et_pb_module et_pb_blurb et_pb_blurb_6 et_animated  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_dark">
+                    <div className="et_pb_with_border et_pb_module et_pb_blurb et_pb_blurb_6  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_dark et_had_animation">
                       <div className="et_pb_blurb_content">
                         <div className="et_pb_main_blurb_image">
                           <span className="et_pb_image_wrap">
@@ -402,7 +402,7 @@ export default function Home() {
                 {/* .et_pb_row */}
                 <div className="et_pb_row et_pb_row_6">
                   <div className="et_pb_column et_pb_column_1_3 et_pb_column_12  et_pb_css_mix_blend_mode_passthrough">
-                    <div className="et_pb_with_border et_pb_module et_pb_blurb et_pb_blurb_7 et_animated  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_dark">
+                    <div className="et_pb_with_border et_pb_module et_pb_blurb et_pb_blurb_7  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_dark et_had_animation">
                       <div className="et_pb_blurb_content">
                         <div className="et_pb_main_blurb_image">
                           <span className="et_pb_image_wrap">
@@ -430,7 +430,7 @@ export default function Home() {
                   </div>{" "}
                   {/* .et_pb_column */}
                   <div className="et_pb_column et_pb_column_2_3 et_pb_column_13  et_pb_css_mix_blend_mode_passthrough et-last-child">
-                    <div className="et_pb_module et_pb_image et_pb_image_2 et_animated et-waypoint">
+                    <div className="et_pb_module et_pb_image et_pb_image_2 et_had_animation">
                       <span className="et_pb_image_wrap ">
                         <img
                           loading="lazy"
@@ -477,7 +477,7 @@ export default function Home() {
                   </div>{" "}
                   {/* .et_pb_column */}
                   <div className="et_pb_column et_pb_column_1_2 et_pb_column_16  et_pb_css_mix_blend_mode_passthrough et-last-child">
-                    <div className="et_pb_module et_pb_image et_pb_image_3 et_animated et-waypoint">
+                    <div className="et_pb_module et_pb_image et_pb_image_3 et_had_animation">
                       <span className="et_pb_image_wrap ">
                         <img
                           loading="lazy"
@@ -502,7 +502,7 @@ export default function Home() {
                   <div className="et_pb_column et_pb_column_4_4 et_pb_column_17  et_pb_css_mix_blend_mode_passthrough et-last-child">
                     <div className="et_pb_module et_pb_text et_pb_text_10  et_pb_text_align_left et_pb_bg_layout_dark">
                       <div className="et_pb_text_inner">
-                        <h1>JET statistics</h1>
+                        <h1 style={{fontSize: '20px'}}>JET statistics</h1>
                       </div>
                     </div>{" "}
                     {/* .et_pb_text */}
@@ -529,7 +529,7 @@ export default function Home() {
                 <div className="et_pb_with_border et_pb_row et_pb_row_10 et_pb_gutters2">
                   <div className="et_pb_column et_pb_column_1_5 et_pb_column_17  et_pb_css_mix_blend_mode_passthrough">
                     <div
-                      className="et_pb_module et_pb_number_counter et_pb_number_counter_2  et_pb_text_align_center et_pb_bg_layout_dark et_pb_with_title"
+                      className="et_pb_module et_pb_number_counter et_pb_number_counter_2  et_pb_text_align_center et_pb_bg_layout_dark et_pb_with_title active"
                       data-number-value={groPrice}
                       data-number-separator=","
                     >
@@ -546,7 +546,7 @@ export default function Home() {
                   {/* .et_pb_column */}
                   <div className="et_pb_column et_pb_column_1_5 et_pb_column_18  et_pb_css_mix_blend_mode_passthrough">
                     <div
-                      className="et_pb_module et_pb_number_counter et_pb_number_counter_0  et_pb_text_align_center et_pb_bg_layout_dark et_pb_with_title"
+                      className="et_pb_module et_pb_number_counter et_pb_number_counter_0  et_pb_text_align_center et_pb_bg_layout_dark et_pb_with_title active"
                       data-number-value={groMarketCap}
                       data-number-separator=","
                     >
@@ -566,7 +566,7 @@ export default function Home() {
                   {/* .et_pb_column */}
                   <div className="et_pb_column et_pb_column_1_5 et_pb_column_19  et_pb_css_mix_blend_mode_passthrough">
                     <div
-                      className="et_pb_module et_pb_number_counter et_pb_number_counter_1  et_pb_text_align_center et_pb_bg_layout_dark et_pb_with_title"
+                      className="et_pb_module et_pb_number_counter et_pb_number_counter_1  et_pb_text_align_center et_pb_bg_layout_dark et_pb_with_title active"
                       data-number-value={groBurnt}
                       data-number-separator=","
                     >
@@ -583,7 +583,7 @@ export default function Home() {
                   {/* .et_pb_column */}
                   <div className="et_pb_column et_pb_column_1_5 et_pb_column_20  et_pb_css_mix_blend_mode_passthrough">
                     <div
-                      className="et_pb_module et_pb_number_counter et_pb_number_counter_2  et_pb_text_align_center et_pb_bg_layout_dark et_pb_with_title"
+                      className="et_pb_module et_pb_number_counter et_pb_number_counter_2  et_pb_text_align_center et_pb_bg_layout_dark et_pb_with_title active"
                       data-number-value={groSupply}
                       data-number-separator=","
                     >
@@ -602,7 +602,7 @@ export default function Home() {
                   {/* .et_pb_column */}
                   <div className="et_pb_column et_pb_column_1_5 et_pb_column_21  et_pb_css_mix_blend_mode_passthrough et-last-child">
                     <div
-                      className="et_pb_module et_pb_number_counter et_pb_number_counter_3  et_pb_text_align_center et_pb_bg_layout_dark et_pb_with_title"
+                      className="et_pb_module et_pb_number_counter et_pb_number_counter_3  et_pb_text_align_center et_pb_bg_layout_dark et_pb_with_title active"
                       data-number-value={groTVL}
                       data-number-separator=","
                     >
