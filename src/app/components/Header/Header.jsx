@@ -47,7 +47,6 @@ export default function Header() {
               }
             >
               <div className="d-flex align-items-center pb-4">
-                {/* <ConnectBtn /> */}
                 <span
                   className="mobile_menu_bar mobile_menu_bar_toggle ml-1"
                   onClick={() => setToggleMobileNav(~toggleMobileNav)}

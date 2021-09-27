@@ -39,7 +39,7 @@ export default function Footer() {
       <div className="et_pb_row et_pb_row_12">
         <div className="et_pb_column et_pb_column_1_3 et_pb_column_23  et_pb_css_mix_blend_mode_passthrough">
           <div className="et_pb_module et_pb_image et_pb_image_5">
-            <a href="https://t.me/" target="_blank" className="et_pb_image_wrap " rel="noreferrer">
+            <a href="https://t.me/GoJetOfficialGroup" target="_blank" className="et_pb_image_wrap " rel="noreferrer">
               <img
                 loading="lazy"
                 src="./assets/image/1024px-Telegram_logo.svg_.png"
@@ -57,7 +57,7 @@ export default function Footer() {
         <div className="et_pb_column et_pb_column_1_3 et_pb_column_24  et_pb_css_mix_blend_mode_passthrough">
           <div className="et_pb_module et_pb_image et_pb_image_6">
             <a
-              href="https://twitter.com/"
+              href="https://twitter.com/gojettoken/status/1400516980302548994?s=21"
               target="_blank"
               className="et_pb_image_wrap "
               rel="noreferrer"
@@ -79,16 +79,16 @@ export default function Footer() {
         <div className="et_pb_column et_pb_column_1_3 et_pb_column_25  et_pb_css_mix_blend_mode_passthrough et-last-child">
           <div className="et_pb_module et_pb_image et_pb_image_7">
             <a
-              href="https://medium.com/"
+              href="https://www.instagram.com/p/CTSoWhhpONm/?utm_medium=copy_linkhttps://www.instagram.com/p/CTSoWhhpONm/?utm_medium=copy_link"
               target="_blank"
               className="et_pb_image_wrap "
               rel="noreferrer"
             >
               <img
                 loading="lazy"
-                src="./assets/image/1200px-Medium_logo_Monogram.svg_.png"
+                src="./assets/image/Instagram-logo.png"
                 alt=""
-                title="Medium"
+                title="Instagram"
                 height="auto"
                 width="auto"
                 sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1200px, 100vw"

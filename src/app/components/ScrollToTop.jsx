@@ -11,7 +11,7 @@ export default function ScrollToTop() {
   };
   return (
     <span className="et_pb_scroll_top et-pb-icon" onClick={scrollToTop}>
-      <img src="assets/image/top.png" />
+      <img src="assets/image/top.png" alt="top"/>
     </span>
   );
 }

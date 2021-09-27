@@ -12,7 +12,7 @@ import { getAccountSymbol } from "../../store/constants/web3";
 
 import SubMenu from './SubMenu';
 
-const HIDE_LOGO_PATH = ['/pools'];
+// const HIDE_LOGO_PATH = ['/pools'];
 
 // eslint-disable-next-line react/prop-types
 export default function NavMenu(props) {

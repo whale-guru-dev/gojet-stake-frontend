@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import style from './PoolItem.module.scss';
 import { get } from 'lodash';
 import cn from 'classnames';
-import CoinAvatar from "../../CoinAvatar";
+// import CoinAvatar from "../../CoinAvatar";
 import { useGetApiPrice } from "../../../state/hooks";
 import { Flex } from '@pancakeswap-libs/uikit'
 import CardActions from "./CardActions";
@@ -29,9 +29,9 @@ export default function PoolItem(props) {
   const { userData } = pool;
 
   const name = get(pool, 'poolTitle');
-  const logoUrl = get(pool, 'mainCoinImage');
+  // const logoUrl = get(pool, 'mainCoinImage');
   const description = get(pool, 'description');
-  const iconUrl = get(pool, 'smallerCoinImage');
+  // const iconUrl = get(pool, 'smallerCoinImage');
   const poolChainId = get(pool, 'chainId');
   const chainId = useSelector(state => state.user.chainId);
   const stakedBalance = new BigNumber(userData?.stakedBalance || 0);

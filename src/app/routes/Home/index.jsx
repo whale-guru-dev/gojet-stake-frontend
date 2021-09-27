@@ -12,23 +12,11 @@ const FlexRow = styled.div`
   // display: flex;
 `;
 
-const MarginAutoDiv = styled.div`
-  // margin-left: auto;
-  // margin-right: auto !important;
-`;
-
 export default function Home() {
   const [groBurnt, setGroBurnt] = useState("0");
   const [groSupply, setGroSupply] = useState("0");
   const [groMarketCap, setGroMarketCap] = useState("0");
-  const [groTVL, setGroTVL] = useState("0");
   const [groPrice, setGroPrice] = useState("0");
-
-  const [wheatBurnt, setWheatBurnt] = useState("0");
-  const [wheatSupply, setWheatSupply] = useState("0");
-  const [wheatMarketCap, setWheatMarketCap] = useState("0");
-  const [wheatTVL, setWheatTVL] = useState("0");
-  const [wheatPrice, setWheatPrice] = useState("0");
 
   useEffect(() => {
     async function fetchData() {
@@ -48,37 +36,6 @@ export default function Home() {
 
       const groMarketCap = groPrice * (groData.data.totalSupply * 1.0);
       setGroMarketCap(parseInt(groMarketCap));
-
-      const groTVLData = await axios.get(
-        "https://api.growthdefi.com/tvl/gro-yield"
-      );
-      const groTVL = groTVLData.data.TVL * 1.0;
-      setGroTVL(parseInt(groTVL));
-
-      const wheatPriceData = await axios.get(
-        "https://api.coingecko.com/api/v3/coins/wheat-token"
-      );
-      const wheatPrice = wheatPriceData.data.market_data.current_price.usd;
-      setWheatPrice(wheatPrice);
-
-      const wheatData = await axios.get(
-        "https://api.growthdefi.com/token/wheat"
-      );
-      const wheatBurnt = wheatData.data.burnt * 1.0;
-
-      setWheatBurnt(parseInt(wheatBurnt));
-
-      const wheatSupply = wheatData.data.totalSupply * 1.0;
-      setWheatSupply(parseInt(wheatSupply));
-
-      const wheatMarketCap = wheatPrice * (wheatData.data.totalSupply * 1.0);
-      setWheatMarketCap(parseInt(wheatMarketCap));
-
-      const wheatTVLData = await axios.get(
-        "https://api.growthdefi.com/tvl/wheat-tvl"
-      );
-      const wheatTVL = wheatTVLData.data.TVL * 1.0;
-      setWheatTVL(parseInt(wheatTVL));
     }
 
     fetchData();
@@ -144,7 +101,7 @@ export default function Home() {
                   <div className="et_pb_column et_pb_column_4_4 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough et-last-child">
                     <div className="et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_center et_pb_bg_layout_dark">
                       <div className="et_pb_text_inner">
-                        <h2>A MULTI ASSET ECOSYSTEM</h2>
+                        <h2>A REWARD FOCUSED ECOSYSTEM</h2>
                       </div>
                     </div>{" "}
                     {/* .et_pb_text */}
@@ -155,11 +112,10 @@ export default function Home() {
                       <div className="et_pb_text_inner">
                         <p>
                           <span>
-                            The Go Jet ecosystem utilises multiple assets in
-                            order to create a sustainable environment. This
-                            allows users to spread their exposure as well as
-                            create single or multiple revenue streams from their
-                            investments.
+                            The Go Jet ecosystem utilises assets in order to
+                            create a sustainable environment. This allows users
+                            to spread their exposure as well as create single or
+                            multiple revenue streams from their investments.
                           </span>
                         </p>
                       </div>
@@ -187,14 +143,17 @@ export default function Home() {
                         <h1 className="et_pb_module_header">
                           <span>JET</span>
                         </h1>
-                        <div className="et_pb_blurb_description" style={{textAlign: 'center'}}>
+                        <div
+                          className="et_pb_blurb_description"
+                          style={{ textAlign: "center" }}
+                        >
                           <p
                             className="blockParagraph-544a408c"
                             data-key="fcf003555ca04ed1bd021212cf4c10ba"
                           >
                             <span className="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">
                               <span data-key="667f836fd7104675a2ba6164810fcb4b">
-                              🛩- 4 seater Jet ($150 per elite token)
+                                🛩- 4 seater Jet ($150 per elite token)
                               </span>
                             </span>
                           </p>
@@ -205,7 +164,7 @@ export default function Home() {
                           >
                             <span className="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">
                               <span data-key="c1f50bcf0d7a418db585a2b9529f553f">
-                              ✈️- 6 seater Jet ($250 per elite token)
+                                ✈️- 6 seater Jet ($250 per elite token)
                               </span>
                             </span>
                           </p>
@@ -216,7 +175,7 @@ export default function Home() {
                           >
                             <span className="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">
                               <span data-key="c1f50bcf0d7a418db585a2b9529f553f">
-                              🛫- 8 seater Jet ($350 per elite token)
+                                🛫- 8 seater Jet ($350 per elite token)
                               </span>
                             </span>
                           </p>
@@ -227,7 +186,7 @@ export default function Home() {
                           >
                             <span className="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">
                               <span data-key="c1f50bcf0d7a418db585a2b9529f553f">
-                              🚅-12 seater Jet ($500 per elite token)
+                                🚅-12 seater Jet ($500 per elite token)
                               </span>
                             </span>
                           </p>
@@ -265,7 +224,7 @@ export default function Home() {
                       <div className="et_pb_text_inner">
                         <p>
                           Go Jet is committed to creating a sustainable yield
-                          farming experience that utilises multichain protocols
+                          farming experience that utilises BSC network protocols
                           in order generate a variety of passive income streams
                           using single asset staking and incentivised liquidity
                           provision.&nbsp;
@@ -281,7 +240,7 @@ export default function Home() {
                         <div className="et_pb_main_blurb_image">
                           <span className="et_pb_image_wrap">
                             <span className="et-waypoint et_pb_animation_top et-pb-icon">
-                              <img src="assets/image/internation.png" />
+                              <img src="assets/image/internation.png" alt="" />
                             </span>
                           </span>
                         </div>
@@ -313,20 +272,23 @@ export default function Home() {
                         <div className="et_pb_main_blurb_image">
                           <span className="et_pb_image_wrap">
                             <span className="et-waypoint et_pb_animation_top et-pb-icon">
-                              <img src="./assets/image/combine.png" />
+                              <img src="./assets/image/combine.png" alt="" />
                             </span>
                           </span>
                         </div>
                         <div className="et_pb_blurb_container">
                           <h4 className="et_pb_module_header">
-                            <span>Multi ASSET</span>
+                            <span>Staking</span>
                           </h4>
                           <div className="et_pb_blurb_description">
                             <p>
-                              We understand that one token can’t do everything –
-                              not if you want a sustainable ecosystem that can
-                              thrive as technology develops&nbsp; and changes .
-                              All assets benefit the entire ecosystem.
+                              Holders of the ($JET) tokens will also be able to
+                              Stake their tokens and make anywhere from 83.5%
+                              APY to 106.2% APY <br />
+                              🛩 - Private Jet Pool 83.5% APY
+                              <br />
+                              ✈️ - Mid Size Jet Pool 101.00% APY <br />
+                              🛫- Jumbo Jet Pool 106.2% APY
                             </p>
                           </div>
                         </div>
@@ -342,24 +304,22 @@ export default function Home() {
                         <div className="et_pb_main_blurb_image">
                           <span className="et_pb_image_wrap">
                             <span className="et-waypoint et_pb_animation_top et-pb-icon">
-                              <img src="assets/image/warning.png" />
+                              <img src="assets/image/warning.png" alt="" />
                             </span>
                           </span>
                         </div>
                         <div className="et_pb_blurb_container">
                           <h4 className="et_pb_module_header">
-                            <span>Secure CONTRACTS</span>
+                            <span>Competitive Price</span>
                           </h4>
                           <div className="et_pb_blurb_description">
                             <p>
-                              Our V1 strategy contracts have been been audited
-                              by{" "}
-                              <a href="https://consensys.net/diligence/audits/2020/12/growth-defi-v1/">
-                                consensys
-                              </a>
-                              . We also use tried and battle tested contracts
-                              that have shown to be safe and secure which can
-                              viewed at any time by anyone.&nbsp;&nbsp;
+                              Once the winner is then declared all other funds
+                              that belonged to the losers of the raffle will
+                              then be put back into liquidity of the project
+                              which in turn will pump the price up and add hype
+                              for the next raffle in the coming months
+                              ahead.&nbsp;&nbsp;
                             </p>
                           </div>
                         </div>
@@ -375,20 +335,20 @@ export default function Home() {
                         <div className="et_pb_main_blurb_image">
                           <span className="et_pb_image_wrap">
                             <span className="et-waypoint et_pb_animation_top et-pb-icon">
-                              <img src="assets/image/target.png" />
+                              <img src="assets/image/target.png" alt="" />
                             </span>
                           </span>
                         </div>
                         <div className="et_pb_blurb_container">
                           <h4 className="et_pb_module_header">
-                            <span>EXPERIENCE</span>
+                            <span>Raffle Concept</span>
                           </h4>
                           <div className="et_pb_blurb_description">
                             <p>
-                              We have developed several products during our time
-                              in the space and have covered a number of
-                              blockchains including IOST, Ethereum and the
-                              Binance Smart Chain.&nbsp;
+                              On the day of the raffle one holders address who
+                              had bought elite tokens and put themselves in the
+                              raffle will be pulled. There will only be one
+                              winner per raffle.&nbsp;
                             </p>
                           </div>
                         </div>
@@ -407,19 +367,20 @@ export default function Home() {
                         <div className="et_pb_main_blurb_image">
                           <span className="et_pb_image_wrap">
                             <span className="et-waypoint et_pb_animation_top et-pb-icon">
-                              <img src="assets/image/card.png" />
+                              <img src="assets/image/card.png" alt="" />
                             </span>
                           </span>
                         </div>
                         <div className="et_pb_blurb_container">
                           <h4 className="et_pb_module_header">
-                            <span>REWARDS EVERY BLOCK</span>
+                            <span>Giveaways</span>
                           </h4>
                           <div className="et_pb_blurb_description">
                             <p>
-                              Rewards are distributed every block and there is
-                              no time lock when staking. This means you can
-                              watch your rewards grow multiple times a day.
+                              We will also be offering T-Shirt/Hat/Hoodie
+                              giveaways each month to 20 lucky holders.
+                              Additionally, 6% Buy/Sell tax that will be added
+                              to liquidity and marketing/growth advancement.
                             </p>
                           </div>
                         </div>
@@ -450,59 +411,12 @@ export default function Home() {
                 {/* .et_pb_row */}
               </div>{" "}
               {/* .et_pb_section */}
-              <div className="et_pb_section et_pb_section_6 et_pb_with_background et_section_regular">
-                <div className="et_pb_row et_pb_row_8">
-                  <div className="et_pb_column et_pb_column_1_2 et_pb_column_15  et_pb_css_mix_blend_mode_passthrough">
-                    <div className="et_pb_module et_pb_text et_pb_text_8  et_pb_text_align_left et_pb_bg_layout_dark">
-                      <div className="et_pb_text_inner">
-                        <h2>Interconnected</h2>
-                      </div>
-                    </div>{" "}
-                    {/* .et_pb_text */}
-                    <div className="et_pb_module et_pb_divider et_pb_divider_4 et_pb_divider_position_ et_pb_space">
-                      <div className="et_pb_divider_internal" />
-                    </div>
-                    <div className="et_pb_module et_pb_text et_pb_text_9  et_pb_text_align_left et_pb_bg_layout_dark">
-                      <div className="et_pb_text_inner">
-                        <p>
-                          All our products are part of one ecosystem and they
-                          all contribute to it’s sustainability. Through deposit
-                          and withdraw fee’s, performance fee’s, buybacks, token
-                          burns, deflationary mechanics, incentives, treasuries
-                          and auto compounding we ensure the longevity of the
-                          ecosystem and it’s rewards.
-                        </p>
-                      </div>
-                    </div>{" "}
-                  </div>{" "}
-                  {/* .et_pb_column */}
-                  <div className="et_pb_column et_pb_column_1_2 et_pb_column_16  et_pb_css_mix_blend_mode_passthrough et-last-child">
-                    <div className="et_pb_module et_pb_image et_pb_image_3 et_had_animation">
-                      <span className="et_pb_image_wrap ">
-                        <img
-                          loading="lazy"
-                          src="./assets/image/bg/crypto_illustration_04.png"
-                          alt=""
-                          title=""
-                          height="auto"
-                          width="auto"
-                          sizes="(max-width: 449px) 100vw, 449px"
-                          className="wp-image-23"
-                        />
-                      </span>
-                    </div>
-                  </div>{" "}
-                  {/* .et_pb_column */}
-                </div>{" "}
-                {/* .et_pb_row */}
-              </div>{" "}
-              {/* .et_pb_section */}
               <div className="et_pb_section et_pb_section_7 et_pb_with_background et_section_regular">
                 <div className="et_pb_with_border et_pb_row et_pb_row_9">
                   <div className="et_pb_column et_pb_column_4_4 et_pb_column_17  et_pb_css_mix_blend_mode_passthrough et-last-child">
                     <div className="et_pb_module et_pb_text et_pb_text_10  et_pb_text_align_left et_pb_bg_layout_dark">
                       <div className="et_pb_text_inner">
-                        <h1 style={{fontSize: '20px'}}>JET statistics</h1>
+                        <h1 style={{ fontSize: "20px" }}>JET statistics</h1>
                       </div>
                     </div>{" "}
                     {/* .et_pb_text */}
@@ -527,7 +441,7 @@ export default function Home() {
                 </div>{" "}
                 {/* .et_pb_row */}
                 <div className="et_pb_with_border et_pb_row et_pb_row_10 et_pb_gutters2">
-                  <div className="et_pb_column et_pb_column_1_5 et_pb_column_17  et_pb_css_mix_blend_mode_passthrough">
+                  <div className="et_pb_column et_pb_column_1_4 et_pb_column_17  et_pb_css_mix_blend_mode_passthrough">
                     <div
                       className="et_pb_module et_pb_number_counter et_pb_number_counter_2  et_pb_text_align_center et_pb_bg_layout_dark et_pb_with_title active"
                       data-number-value={groPrice}
@@ -544,7 +458,7 @@ export default function Home() {
                     {/* .et_pb_number_counter */}
                   </div>{" "}
                   {/* .et_pb_column */}
-                  <div className="et_pb_column et_pb_column_1_5 et_pb_column_18  et_pb_css_mix_blend_mode_passthrough">
+                  <div className="et_pb_column et_pb_column_1_4 et_pb_column_18  et_pb_css_mix_blend_mode_passthrough">
                     <div
                       className="et_pb_module et_pb_number_counter et_pb_number_counter_0  et_pb_text_align_center et_pb_bg_layout_dark et_pb_with_title active"
                       data-number-value={groMarketCap}
@@ -564,7 +478,7 @@ export default function Home() {
                     {/* .et_pb_number_counter */}
                   </div>{" "}
                   {/* .et_pb_column */}
-                  <div className="et_pb_column et_pb_column_1_5 et_pb_column_19  et_pb_css_mix_blend_mode_passthrough">
+                  <div className="et_pb_column et_pb_column_1_4 et_pb_column_19  et_pb_css_mix_blend_mode_passthrough">
                     <div
                       className="et_pb_module et_pb_number_counter et_pb_number_counter_1  et_pb_text_align_center et_pb_bg_layout_dark et_pb_with_title active"
                       data-number-value={groBurnt}
@@ -581,7 +495,7 @@ export default function Home() {
                     {/* .et_pb_number_counter */}
                   </div>{" "}
                   {/* .et_pb_column */}
-                  <div className="et_pb_column et_pb_column_1_5 et_pb_column_20  et_pb_css_mix_blend_mode_passthrough">
+                  <div className="et_pb_column et_pb_column_1_4 et_pb_column_20  et_pb_css_mix_blend_mode_passthrough">
                     <div
                       className="et_pb_module et_pb_number_counter et_pb_number_counter_2  et_pb_text_align_center et_pb_bg_layout_dark et_pb_with_title active"
                       data-number-value={groSupply}
@@ -596,23 +510,6 @@ export default function Home() {
                         </p>
                       </div>
                       <h3 className="title">TOTAL supply</h3>
-                    </div>
-                    {/* .et_pb_number_counter */}
-                  </div>{" "}
-                  {/* .et_pb_column */}
-                  <div className="et_pb_column et_pb_column_1_5 et_pb_column_21  et_pb_css_mix_blend_mode_passthrough et-last-child">
-                    <div
-                      className="et_pb_module et_pb_number_counter et_pb_number_counter_3  et_pb_text_align_center et_pb_bg_layout_dark et_pb_with_title active"
-                      data-number-value={groTVL}
-                      data-number-separator=","
-                    >
-                      <div className="percent">
-                        <p>
-                          <span className="">{numberWithCommas(groTVL)}</span>
-                          <span className="percent-sign" />
-                        </p>
-                      </div>
-                      <h3 className="title">$ JET Yield total value locked</h3>
                     </div>
                     {/* .et_pb_number_counter */}
                   </div>{" "}

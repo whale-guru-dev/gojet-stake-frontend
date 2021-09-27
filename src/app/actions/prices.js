@@ -14,7 +14,7 @@ export const fetchPrices = () => async (dispatch) => {
     //   busd: busdData['busd']['usd']
     // }));
     dispatch(updatePricesSuccess({
-      jet: 10,
+      gojet: 10,
       jet: 10,
       busd: 1
     }));

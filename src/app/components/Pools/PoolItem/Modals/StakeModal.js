@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { Flex, Modal, Text } from '@pancakeswap-libs/uikit'
 import { useSousStake } from '../../../../hooks/useStake'
 import { useSousUnstake } from '../../../../hooks/useUnstake'
@@ -39,15 +39,15 @@ const StakeModal = ({
   const [stakeAmount, setStakeAmount] = useState(0);
   const [percent, setPercent] = useState(0);
 
-  const [coinImage, setCoinImage] = useState(null);
+  // const [coinImage, setCoinImage] = useState(null);
 
-  useEffect(() => {
-    if (!pool.smallerCoinImage || pool.smallerCoinImage === '') {
-      setCoinImage(getCoinImage);
-    } else {
-      setCoinImage(pool.smallerCoinImage);
-    }
-  }, [pool.smallerCoinImage]);
+  // useEffect(() => {
+  //   if (!pool.smallerCoinImage || pool.smallerCoinImage === '') {
+  //     setCoinImage(getCoinImage);
+  //   } else {
+  //     setCoinImage(pool.smallerCoinImage);
+  //   }
+  // }, [pool.smallerCoinImage]);
 
   const formattedStakingMax = getFullDisplayBalance(stakingMax, get(pool, 'stakeTokenDecimals', 18), 4);
 

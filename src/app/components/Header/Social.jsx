@@ -5,7 +5,7 @@ export default function Social() {
     <div className="social-icons">
       <ul>
         <li>
-          <a href="https://t.me/">
+          <a href="https://t.me/GoJetOfficialGroup">
             <img
               loading="lazy"
               src="./assets/image/1024px-Telegram_logo.svg_.png"
@@ -18,7 +18,7 @@ export default function Social() {
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/">
+          <a href="https://twitter.com/gojettoken/status/1400516980302548994?s=21">
             <img
               loading="lazy"
               src="./assets/image/twitter-logo.png"
@@ -31,12 +31,12 @@ export default function Social() {
           </a>
         </li>
         <li>
-          <a href="https://medium.com/">
+          <a href="https://www.instagram.com/p/CTSoWhhpONm/?utm_medium=copy_linkhttps://www.instagram.com/p/CTSoWhhpONm/?utm_medium=copy_link">
             <img
               loading="lazy"
-              src="./assets/image/1200px-Medium_logo_Monogram.svg_.png"
+              src="./assets/image/Instagram-logo.png"
               alt=""
-              title="Medium"
+              title="Instagram"
               height="auto"
               width="auto"
               className="social-icon"

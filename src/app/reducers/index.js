@@ -4,7 +4,6 @@ import user from './user';
 import pools from './pools';
 import prices from './prices';
 import block from './block';
-import projects from './projects';
 import { persistReducer } from 'redux-persist';
 
 
@@ -44,7 +43,6 @@ const reducers = {
   pools: persistReducer(poolsConfig, pools),
   prices: persistReducer(pricesConfig, prices),
   block: persistReducer(blockConfig, block),
-  projects
 };
 
 export default reducers;

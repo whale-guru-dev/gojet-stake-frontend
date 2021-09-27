@@ -26,6 +26,8 @@
     "ethers": "^5.4.6",
     "from-exponential": "^1.1.1",
     "has-tostringtag": "^1.0.0",
+    "highcharts": "^9.2.2",
+    "highcharts-react-official": "^3.0.0",
     "jazzicon": "^1.5.0",
     "localforage": "^1.10.0",
     "lodash": "^4.17.21",
